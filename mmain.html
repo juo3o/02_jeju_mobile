@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>놀당갑서,제주</title>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- 공통서식,          헤더,하단 앱내비게이션 서식 -->
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <!-- 메인서식 -->
+    <link rel="stylesheet" href="./css/mmain.css" type="text/css">
+    <!-- 스와이프서식 -->
+    <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+    <!-- 폰트어썸서식 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
+</head>
+<body>
+        <!-- 1. 상단 헤더영역, 하단 앱내비게이션 -->
+        <header>
+            <h1><a href="mmain.html" title="메인으로 바로가기"><img src="./images/logo.png" alt="메인로고"></a></h1>
+
+                <!-- 검색아이콘, 토글아이콘 -->
+                <a href="msearch.html" title="검색창" class="icon_wrap i01"><img src="./images/search.png" alt="검색창"></a>
+                <label for="toggle" class="icon_wrap i02"><img src="./images/toggle.png" alt="메뉴"></label><input type="checkbox" id="toggle">
+
+                <!-- 내비게이션 시작 -->
+                <nav class="gnb">
+                    <!-- 닫기버튼 -->
+                    <label for="toggle" class="close_btn"><img src="./images/close.png" alt="닫기"></label>
+
+                    <ul>
+                        <li><img class="user_con" src="./images/userimage.png" alt="유저이미지"></li>
+                        <li><label for="sub1">마이페이지<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub1">
+                            <!-- 서브내비게이션 시작 -->
+                            <ul class="sub">
+                                <li><a href="info.html" title="개인정보수정">개인정보수정</a></li>
+                                <li><a href="info.html" title="설정">설정</a></li>
+                            </ul>
+                        </li>
+                        <li><label for="sub2">여행지탐색<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub2">
+                            <ul class="sub">
+                                <li><a href="main_loca.html" title="위치별">위치별</a></li>
+                                <li><a href="main_cos.html" title="코스별">코스별</a></li>
+                                <li><a href="main_shop.html" title="맛집쇼핑">맛집&#47;쇼핑</a></li>
+                                <li><a href="main_conven.html" title="편의시설">편의시설</a></li>
+                            </ul>
+                        </li>
+                        <li><label for="sub3">숙소예약<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub3">
+                            <ul class="sub">
+                                <li><a href="main_hotel.html" title="호텔예약">호텔예약</a></li>
+                                <li><a href="main_house.html" title="독채예약">독채예약</a></li>
+                                <li><a href="main_camp.html" title="캠핑예약">캠핑예약</a></li>
+                            </ul>
+                        </li>
+                        <li><label for="sub4">렌트예약<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub4">
+                            <ul class="sub">
+                                <li><a href="main_cycle.html" title="오토바이예약">오토바이예약</a></li>
+                                <li><a href="main_rentcar.html" title="자동차예약">자동차예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="notice.html" title="공지사항">공지사항 &#47; 이벤트</a>
+                        </li>
+                        <li><a href="tip.html" title="여행꿀팁">여행꿀팁</a>
+                        </li>
+                        <li><a href="service.html" title="고객센터">고객센터</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                
+
+
+                <!-- 하단 고정 내비게이션 -->
+                <nav class="f_lnb">
+                    <ul>
+                        <li><a href="./mmain.html" title="메인화면" >
+                            <i class="fas fa-home"></i></a>
+                        </li>
+        
+                        <li><a href="./mschedule.html" title="일정">
+                            <i class="fas fa-calendar"></i></a>
+                        </li>
+        
+                        <li><a href="./mkeep_food.html" title="북마크">
+                            <i class="fas fa-bookmark"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+        
+        </header>
+    
+
+        <!-- 메인영역 -->
+        <main>
+            
+            <!-- 메인배너 -->
+            <article class="m_banner">
+                <h2 style="display: none;">메인배너</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#" title="산방산배너"><img src="./images/산방산배너m.png" alt="산방산배너"></a></div>
+                        <div class="swiper-slide"><a href="#" title="한라산배너"><img src="./images/한라산배너m.png" alt="한라산배너"></a></div>
+                        <div class="swiper-slide"><a href="#" title="새별오름배너"><img src="./images/새별오름배너m.png" alt="새별오름배너"></a></div>
+                        <div class="swiper-slide"><a href="#" title="협재배너"><img src="./images/협재배너m.png" alt="협재배너"></a></div>
+                        <div class="swiper-slide"><a href="#" title="동백수목원배너"><img src="./images/동백수목원배너m.png" alt="동백수목원배너"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </article>
+
+
+            <!-- 날씨위젯  -->
+            <div class="wea_wrap">
+                <p class="p01">맑음,<br>어제와 같음</p>
+                <p class="p02">21℃</p>
+            </div>
+
+
+
+            <article>
+                <h2 class="map_title">위치별여행지</h2>
+                <div class="map_wrap">
+                    <img src="./images/지도동서남북.png" usemap="#image-map" alt="위치별여행지">
+
+                    <map name="image-map">
+                        <area target="_blank" alt="서쪽제주" title="서쪽제주" href="m_loca_west.html" coords="124,187,84,230,39,267,0,312,1,476,14,529,66,565,110,573,181,573,233,562,274,536,282,483,279,430,282,412,305,411,333,402,342,365,353,336,348,321,284,325,227,286" shape="poly">
+                        <area target="_blank" alt="북쪽제주" title="북쪽제주" href="m_loca_noth.html" coords="137,164,148,200,190,248,219,272,247,293,281,318,358,314,417,306,512,297,560,266,608,253,666,241,692,224,704,211,696,192,692,166,694,131,696,111,685,73,678,48,687,15,617,9,369,29,145,126" shape="poly">
+                        <area target="_blank" alt="동쪽제주" title="동쪽제주" href="m_loca_east.html" coords="698,8,852,1,919,10,970,17,1022,38,1029,72,1024,128,1018,184,1009,223,995,307,972,388,940,449,896,463,798,435,782,413,770,366,750,316,698,296,659,269,651,253,674,242,695,229,712,217,708,191,702,170,704,126,698,88,688,57,693,33" shape="poly">
+                        <area target="_blank" alt="남쪽제주" title="남쪽제주" href="m_loca_south.html" coords="361,321,358,346,353,381,328,417,298,419,289,421,286,437,290,455,289,477,283,505,282,529,299,546,339,546,382,556,449,560,529,565,599,558,637,542,668,519,709,488,737,485,763,483,779,463,780,441,759,365,741,328,688,303,649,274,627,259,591,264,552,279,531,296,495,311,422,317,399,314" shape="poly">
+                    </map>
+                </div>
+            </article>
+
+            <article class="a_wrap">
+                <h2>렌트 &#47; 숙소</h2>
+                <a href="main_hotel.html" title="호텔바로가기" class="p_btn">전체보기 <i class="far fa-plus"></i></a>
+                
+                <div class="rent">
+                    <a href="main_hotel.html" title="호텔예약하기"><img src="./images/호텔배너.png" alt="호텔배너"><p>호텔 예약하기<i class="fa-solid fa-chevron-right"></i></p></a>
+                    <div class="rent_0">
+                        <a href="main_house.html" title="독채예약하기" class="r01"><img src="./images/독채배너.png" alt="독채배너"><p>독채 예약하기<i class="fa-solid fa-chevron-right"></i></p></a>
+                        <a href="main_rentcar.html" title="렌트카예약하기" class="r02"><img src="./images/렌터카배너.png" alt="렌트카배너"><p>렌트카 예약하기<i class="fa-solid fa-chevron-right"></i></p></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="a_wrap">
+                <h2>실시간 제주</h2>
+                <a href="sns.html" title="실시간제주 바로가기" class="p_btn">전체보기 <i class="far fa-plus"></i></a>
+
+                <ul class="sns">
+                    <li>
+                        <a href="snstxt.html" title="con1"><img src="./images/m_con1.png" alt="con1"></a>
+                        <div class="p_wrap">
+                            <h3>21mint<i class="fa-solid fa-heart"></i></h3>
+                            <p>여름과 가을이 교차하는<br>어떤 날, </p>
+                            <a href="snstxt.html" title="제주도립미술관">#제주도립미술관</a><br>
+                            <a href="snstxt.html" title="숲속미술관">#숲속미술관</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="snstxt.html" title="con2"><img src="./images/m_con2.png" alt="con2"></a>
+                        <div class="p_wrap">
+                            <h3>민규네<i class="fa-solid fa-heart"></i></h3>
+                            <p>아쿠아플라넷에서의 하루~<br>신기한 물속 친구들 </p>
+                            <a href="snstxt.html" title="아쿠아플라넷">#아쿠아플라넷</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="snstxt.html" title="con3"><img src="./images/m_con3.png" alt="con3"></a>
+                        <div class="p_wrap">
+                            <h3>포피랑<i class="fa-solid fa-heart"></i></h3>
+                            <p>푸릇한 녹차농장<br>날씨가 너무 좋아요</p>
+                            <a href="snstxt.html" title="녹차농장">#녹차농장</a> <a href="snstxt.html" title="잔디밭">#잔디밭</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="snstxt.html" title="con4"><img src="./images/m_con4.png" alt="con4"></a>
+                        <div class="p_wrap">
+                            <h3>귤나라유리<i class="fa-solid fa-heart"></i></h3>
+                            <p>휴애리 수국!!<br>너무 이쁘다~</p>
+                            <a href="snstxt.html" title="휴애리">#휴애리</a> <a href="snstxt.html" title="수국">#수국</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="snstxt.html" title="con5"><img src="./images/m_con5.png" alt="con5"></a>
+                        <div class="p_wrap">
+                            <h3>제주살이<i class="fa-solid fa-heart"></i></h3>
+                            <p>혼자 바다에 들어가셨나?<br>나홀로 해녀. 나홀로 제주</p>
+                            <a href="snstxt.html" title="해녀">#해녀</a> <a href="snstxt.html" title="제주살이 24일차">#제주살이 24일차</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="snstxt.html" title="con6"><img src="./images/m_con6.png" alt="con6"></a>
+                        <div class="p_wrap">
+                            <h3>민재야<i class="fa-solid fa-heart"></i></h3>
+                            <p>너무 맛있는 집&hearts;<br>다음 제주 올 때 또 올게요&gt;&lt;</p>
+                            <a href="snstxt.html" title="흑돼지삼겹살">#흑돼지삼겹살</a> <a href="snstxt.html" title="제주맛집">#제주맛집</a>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="a_wrap">
+                <h2>여행꿀팁</h2>
+                <a href="tip.html" title="여행꿀팁바로가기" class="p_btn">전체보기 <i class="far fa-plus"></i></a>
+                <div class="tip_wrap mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#" title="서귀포마을산책"><img src="./images/서귀포마을산책.png" alt="서귀포마을산책"></a></div>
+                        <div class="swiper-slide"><a href="#" title="슬로우제주"><img src="./images/슬로우제주.png" alt="슬로우제주"></a></div>
+                        <div class="swiper-slide"><a href="#" title="한라산등반"><img src="./images/한라산등반.png" alt="한라산등반"></a></div>
+                    </div>
+                </div>
+
+            </article>
+
+        </main>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            effect: "fade",
+            centeredSlides: true,
+            autoplay : {
+                delay: 3000,
+                disableOnInteraction : false,
+            },
+            pagination : {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+            });
+        </script>    
+
+
+        <!-- 3. 하단 푸터영역 -->
+        <footer>
+    
+        </footer>
+
+
+        <script src="./script/swiper.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 0,
+                effect: "slide",
+                centeredSlides: true,
+                autoplay : {
+                delay: 3000,
+                disableOnInteraction : false,
+                },
+                pagination : {
+                el: ".swiper-pagination",
+                clickable: true,
+                }
+            });
+        </script>
+</body>
+</html>

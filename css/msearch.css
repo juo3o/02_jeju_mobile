@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* 메인서식 */
+/* 검색창 서식 */
+.fa-arrow-left{
+    font-size: 25px;
+    color:#4EB4BF ;
+    position: absolute;
+    top: 5%; left: 5%;
+}
+
+
+
+.wrap{
+    width: 70%;
+    margin: -30px auto 20px auto;
+    position: relative;
+}
+.wrap img{position: absolute; right: 0px; bottom: 8px;}
+.s_bar{
+    width: 100%;
+    border-style: none;
+    border-bottom: 2px solid #4EB4BF;
+    font-size: 1rem;
+    line-height: 40px;
+    text-indent: 10px;
+}
+
+
+
+.con01{width: 70%; margin: 0px auto;}
+.con01 > h2{
+    line-height: 70px;
+    margin-top: 20px;
+
+}
+.a_wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.a_wrap > a{
+    background: #F28241;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    margin: 5px 5px;
+}

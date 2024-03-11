@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <link href="./css/mjoin.css" rel="stylesheet" type="text/css">
+    <!-- 폰트어썸 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css">
+
+</head>
+
+<body>
+    <!-- 상단헤더영역-->
+    <header>
+        <a href="mlogin.html" title="로그인화면으로가기"><span class="fa fa-close"></span></a>
+    </header>
+
+<!-- 회원가입 영역 -->
+<main>
+    <form name="join" method="post" action="join.php">
+        <fieldset class="form">
+            <legend>회원가입</legend>
+
+            <input type="text" placeholder="아이디" class="half_box">
+            <input type="button" value="중복확인" class="check_box">
+
+            <input type="text" placeholder="비밀번호" class="box">
+
+            <input type="text" placeholder="비밀번호 확인" class="box">
+
+            <input type="text" placeholder="이름" class="box">
+
+            <input type="text" placeholder="생년월일" class="box">
+
+            <input type="text" placeholder="본인인증" class="half_box">
+            <input type="button" value="인증요청" class="check_box2">
+
+            <input type="text" placeholder="인증번호를 입력해 주세요" class="half_box">
+            <input type="button" value="확인" class="check_box">
+
+
+
+                <input type="checkbox" id="all_ok">
+                <label for="all_ok">약관에 모두 동의합니다</label>
+                <a href="#" title="약관 전체보기" class="tos_box">약관전체보기</a>
+
+            <hr>
+
+            <input type="checkbox" id="check_1">
+                <label for="check_1">서비스 이용약관 *</label>
+
+            
+            <textarea readonly name="id" cols="50" rows="5" class="box" id="check_1">놀당갑서,제주 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 놀당갑서,제주 서비스의 이용과 관련하여 놀당갑서, 제주 서비스를 제공하는 놀당갑서, 제주 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있습니다.</textarea>
+            
+
+            <input type="checkbox" id="check_2">
+            <label for="check_2">개인정보 취급 약관 *</label>
+
+            <a href="mmain.html" title="메인화면 바로가기" class="start">놀당갑서, 제주 시작하기</a>
+
+        </fieldset>
+    </form>
+</main>
+
+</body>
+</html>

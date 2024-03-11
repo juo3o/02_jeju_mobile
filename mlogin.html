@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>놀당갑서,제주 모바일 웹/앱</title>
+    <!-- 1. 초기화 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+    <!-- 2. 공통서식 -->
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+
+    <!-- 3. 모바일 레이아웃 -->
+    <link href="./css/m_login.css" rel="stylesheet" type="text/css">
+
+    <!-- 4. 아이콘폰트 주소 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
+
+    <!-- 5. 스와이퍼 슬라이드 -->
+    <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <!-- 상단헤더영역-->
+    <header>
+        <h1><img src="./images/logo.png" alt="메인로고"></h1>
+    </header>
+
+    <!-- 메인 로그인영역 -->
+    <main>
+
+        <form name="login" method="post" action="login.php">
+            <fieldset class="form">
+
+                <legend>&nbsp;</legend>
+
+        <div class="back"><!--배경화면위치잡기--></div>
+
+        <input type="text" placeholder="아이디" class="id_pw" maxlength="20">
+        <input type="password" placeholder="비밀번호" class="id_pw" maxlength="20">
+        
+        <div class="id_save">
+            <input type="checkbox" id="save">
+            <label for="save" class="text01"> 자동 로그인</label>        
+        </div>
+
+        <a href="mmain.html" title="메인화면으로가기"  class="login">로그인하기</a>
+        
+        <div class="find">
+            <a href="#" title="아이디 찾기">아이디 찾기 &#x007c; </a>
+            <a href="#" title="비밀번호 찾기">비밀번호 찾기 &#x007c; </a>
+            <a href="mjoin.html" title="회원가입" class="text01">회원가입 </a>
+        </div>
+
+        <h2>간편 로그인</h2>
+
+        <div class="sns_login">
+            <a href="#" title="네이버로그인" class="login_naver"></a>
+            <a href="#" title="카카오톡로그인" class="login_talk"></a>
+            <a href="#" title="구글로그인" class="login_google"></a>
+            <a href="#" title="애플로그인" class="login_apple"></a>
+        </div>
+            
+        </fieldset>
+    </form>
+    </main>
+
+
+
+
+    <!-- 하단푸터영역 -->
+    <footer></footer>
+    
+</body>
+</html>

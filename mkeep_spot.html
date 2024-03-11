@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 놀당갑서, 제주 북마크 관광지</title>
+    <!-- 초기화 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 공통서식 -->
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <!-- 북마크 레이아웃서식 -->
+    <link href="./css/mkeep.css" rel="stylesheet" type="text/css">
+    <!-- 폰트어썸 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css">
+    <!-- 5. 스와이퍼 슬라이드 -->
+    <link href="./css/swiper.css" rel="stylesheet" type="text/css"> 
+    <!-- swiper제이쿼리 스크립트 연결하기 -->
+    <script src="./script/swiper.js"></script>
+
+    <style>
+        .lnb ul li:nth-child(2)>a{
+    color: #F28241;}
+    </style>
+</head>
+<body>
+    <!-- 상단헤더 -->
+    <header>
+        <h1><a href="mmain.html" title="메인으로 바로가기"><img src="./images/logo.png" alt="메인로고"></a></h1>
+
+        <!-- 검색아이콘, 토글아이콘 -->
+        <a href="./kspmsearch.html" title="검색창" class="icon_wrap i01"><img src="./img/search.png" alt="검색창"></a>
+        <label for="toggle" class="icon_wrap i02"><img src="./img/toggle.png" alt="메뉴"></label><input type="checkbox" id="toggle">
+
+        <!-- 토글 내비게이션 시작 -->
+        <nav class="gnb">
+            <!-- 닫기버튼 -->
+            <label for="toggle" class="close_btn"><img src="./images/close.png" alt="닫기"></label>
+
+            <ul>
+                <li><img class="user_con" src="./images/userimage.png" alt="유저이미지"></li>
+                <li><label for="sub1">마이페이지<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub1">
+                    <!-- 서브내비게이션 시작 -->
+                    <ul class="sub">
+                        <li><a href="info.html" title="개인정보수정">개인정보수정</a></li>
+                        <li><a href="info.html" title="설정">설정</a></li>
+                    </ul>
+                </li>
+                <li><label for="sub2">여행지탐색<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub2">
+                    <ul class="sub">
+                        <li><a href="main_loca.html" title="위치별">위치별</a></li>
+                        <li><a href="main_cos.html" title="코스별">코스별</a></li>
+                        <li><a href="main_shop.html" title="맛집쇼핑">맛집&#47;쇼핑</a></li>
+                        <li><a href="main_conven.html" title="편의시설">편의시설</a></li>
+                    </ul>
+                </li>
+                <li><label for="sub3">숙소예약<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub3">
+                    <ul class="sub">
+                        <li><a href="main_hotel.html" title="호텔예약">호텔예약</a></li>
+                        <li><a href="main_house.html" title="독채예약">독채예약</a></li>
+                        <li><a href="main_camp.html" title="캠핑예약">캠핑예약</a></li>
+                    </ul>
+                </li>
+                <li><label for="sub4">렌트예약<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub4">
+                    <ul class="sub">
+                        <li><a href="main_cycle.html" title="오토바이예약">오토바이예약</a></li>
+                        <li><a href="main_rentcar.html" title="자동차예약">자동차예약</a></li>
+                    </ul>
+                </li>
+                <li><a href="notice.html" title="공지사항">공지사항</a>
+                </li>
+                <li><a href="event.html" title="이벤트">이벤트</a>
+                </li>
+                <li><a href="tip.html" title="여행꿀팁">여행꿀팁</a>
+                </li>
+                <li><a href="service.html" title="고객센터">고객센터</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- 하단내비 -->
+        <nav class="f_lnb">
+            <ul>
+                <li><a href="./mmain.html" title="메인화면" >
+                    <i class="fas fa-home"></i></a>
+                </li>
+
+                <li><a href="./mschedule.html" title="일정">
+                    <i class="fas fa-clipboard-list"></i></a>
+                </li>
+
+                <li><a href="./mkeep_food.html" title="북마크">
+                    <i class="fas fa-bookmark"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- keep만 있는 내비 -->
+        <nav class="k_f_lnb">
+            <ul>
+                <li>
+                    <a href="#" title="위치찾기">
+                        <i class="fas fa-map-marked-alt"></i><span>위치찾기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="일정추가">
+                        <i class="fas fa-calendar-plus"></i><span>일정추가</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 메인 -->
+    <main>
+    <!-- 메인배너 -->
+    <article class="slide">
+        <h2>메인슬라이드</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2>겨울 한라산을 만나다<br>눈쌓인 백록담</h2>
+                    <img src="./img/banner-백록담.jpg" alt="백록담">
+                </div>
+                <div class="swiper-slide">
+                    <h2>하늘로 향하는 길,<br>백약이오름</h2>
+                    <img src="./img/banner-백약이오름.jpg" alt="백약이오름">
+                </div>
+                <div class="swiper-slide">
+                    <h2>제주 늦가을 즐기기<br>은빛 억새밭</h2>
+                    <img src="./img/banner-갈대.jpg" alt="억새">
+                </div>
+            </div>
+            <!--콘트롤버튼 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </article>
+
+    <!-- 2 depth -->
+    <nav class="lnb">
+        <ul>
+            <li><a href="./mkeep_food.html" title="맛집">맛집</a></li>
+            <li><a href="./mkeep_spot.html" title="관광지">관광지</a></li>
+            <li><a href="./mkeep_shopping.html" title="쇼핑">쇼핑</a></li>
+            <li><a href="#" title="코스">코스</a></li>
+            <li><a href="#" title="숙소">숙소</a></li>
+            <li><a href="#" title="렌트카">렌트카</a></li>
+        </ul>
+    </nav>
+
+    <!-- 메인 내용들  -->
+    </main>
+        <!-- 필터 -->
+        <input type="checkbox" value="필터" id="filter">
+        <label for="filter" class="filter">필터 <span class="fas fa-filter" ></span></label>
+
+    <!-- 목록들 -->
+    <article class="list">
+        <h2>맛집 목록</h2>
+        <ul>
+            <li>
+                <a href="#" title="새별오름">
+                    <img src="./img/keep-새별오름.jpg" alt="새별오름">
+                    <dl>
+                        <dt>새별오름</dt>
+                        <dd>제주 제주시 애월읍 봉성리 산59-8</dd>
+                    </dl>
+                </a>
+                <a href="#" title="오름 " class="hashtag">#오름  &nbsp;</a>
+                <a href="#" title="억새" class="hashtag">#억새 &nbsp;</a>
+                <a href="#" title="반려동물동반" class="hashtag">#반려동물동반&nbsp;</a>
+            </li>
+            <li>
+                <a href="#" title="쇠소깍">
+                    <img src="./img/keep-쇠소깍.jpg" alt="쇠소깍">
+                    <dl>
+                        <dt>쇠소깍</dt>
+                        <dd>제주 서귀포시 쇠소깍로 104</dd>
+                    </dl>
+                </a>
+                <a href="#" title="계곡" class="hashtag">#계곡</a>
+                <a href="#" title="휴식/힐링" class="hashtag">#휴식/힐링</a>
+                <a href="#" title="액티비티" class="hashtag">#액티비티</a>
+            </li>
+            <li>
+                <a href="#" title="금오름">
+                    <img src="./img/keep-금오름.jpg" alt="금오름">
+                    <dl>
+                        <dt>금오름</dt>
+                        <dd>제주 제주시 한림읍 금악리 산1-1</dd>
+                    </dl>
+                </a>
+                <a href="#" title="오름" class="hashtag">#오름</a>
+                <a href="#" title="걷기/등산" class="hashtag">#걷기/등산</a>
+                <a href="#" title="주차가능" class="hashtag">#주차가능</a>
+            </li>
+            <li>
+                <a href="#" title="정방폭포">
+                    <img src="./img/keep-정방폭포.jpg" alt="정방폭포">
+                    <dl>        
+                        <dt>정방폭포</dt>
+                        <dd>제주 서귀포시 칠십리로214번길 37</dd>
+                    </dl>
+                </a>
+                <a href="#" title="자연유산" class="hashtag">#자연유산</a>
+                <a href="#" title="포토스팟" class="hashtag">#포토스팟</a>
+                <a href="#" title="제주도 3대 폭포" class="hashtag">#제주도 3대 폭포</a>
+            </li>
+            <li>
+                <a href="#" title="김녕해수욕장">
+                    <img src="./img/keep-김녕해수욕장.jpg" alt="김녕해수욕장">
+                    <dl>
+                        <dt>김녕해수욕장</dt>
+                        <dd>제주 제주시 구좌읍 김녕리</dd>
+                    </dl>
+                </a>
+                <a href="#" title="자연경관" class="hashtag">#자연경관</a>
+                <a href="#" title="해수욕장" class="hashtag">#해수욕장</a>
+                <a href="#" title="물놀이" class="hashtag">#물놀이</a>
+            </li>
+            <li>
+                <a href="#" title="휴애리자연생활공원">
+                    <img src="./img/keep-휴애리자연생활공원.jpg" alt="휴애리자연생활공원">
+                    <dl>
+                        <dt>휴애리자연생활공원</dt>
+                        <dd>제주 서귀포시 남원읍 신례동로 256</dd>
+                    </dl>
+                </a>
+                <a href="#" title="자연경관" class="hashtag">#자연경관</a>
+                <a href="#" title="휴식/힐링" class="hashtag">#휴식/힐링</a>
+                <a href="#" title="테마공원" class="hashtag">#테마공원</a>
+            </li>
+            <li>
+                <a href="#" title="비자림">
+                    <img src="./img/keep-비자림.jpg" alt="비자림">
+                    <dl>
+                        <dt>비자림</dt>
+                        <dd>제주 제주시 구좌읍 비자숲길 55</dd>
+                    </dl>
+                </a>
+                <a href="#" title="자연경관" class="hashtag">#자연경관</a>
+                <a href="#" title="걷기/등산" class="hashtag">#걷기/등산</a>
+                <a href="#" title="비오는날" class="hashtag">#비오는날</a>
+            </li>
+        </ul>
+        <p>가고싶은 관광지를 더 추가해보세요 <i class="	far fa-smile-wink"></i></p>
+    </article>
+
+    <!-- 스와이퍼슬라이드 스크립트 -->
+    <script src="./script/swiper.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper",{
+            spaceBeween:0,
+            effect:'fade',
+            centerSlide:true,
+            autoplay:{
+                delay:2500,
+                disableOninteraction:false,},
+            pagination:{
+                el:".swiper-pagination",
+                clickabla:true,}
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+/* 놀다갑성제주 */
+
+/* 공통서식 */
+
+ul{list-style: none;}
+
+input{outline:none;}
+
+a{text-decoration: none; color: #222;}
+
+body,textarea{font-family:'Noto Sans KR', arial, sans-serif;
+    font-size: 14px;
+    color: #333;}
+
+h1{position: relative;
+    z-index: 100;
+}
+
+.h_inner h1 img{
+    width:143.62px;
+    height:30px;
+display: inline-block;}
+
+h2{font-size: 1.1rem;
+    color: #333;
+    font-weight: 400;}
+
+nav{font-size:1.1rem;
+    color: #333;
+    font-weight: 500;}
+
+.hashtag{font-size: 0.9rem;
+    color: rgb(78,180,191);}
+
+
+
+/* 전체영역 가로길이 */
+
+/* header, main, footer{width: 390px;} */
+
+
+
+
+
+/* 상단헤더 서식 */
+header{
+    width: 100%; height: 40px;
+    display: flex;
+    /* position: fixed;
+    left: 0px; top: 0px; */
+    z-index: 999;
+}
+header  h1  img{
+    height: 30px;
+    padding-top: 40px; padding-left: 18px;
+}
+
+/* 체크박스 안보이게 */
+header>input[type=checkbox]{display: none;}
+label{cursor: pointer;}
+
+
+
+
+/*  검색아이콘, 토글아이콘  */
+.icon_wrap{
+    position: absolute;
+    top: 40px;
+    z-index: 80;
+}
+.i01{right: 55px; }
+.i02{right: 15px;}
+
+
+
+/* 내비게이션 시작 */
+.gnb input[type=checkbox]{display: none;}
+.gnb{
+    width: 100%; height: 100%;
+    position: fixed;
+    top: 0px; 
+    left: 100%;
+    background: rgba(0,0,0,.8);
+    z-index: 9999;
+    transition: 0.5s;
+}
+
+.gnb > ul{
+    width: 80%; height: 100%;
+    float: right;
+    background:#fff;
+    padding-top: 180px;
+    position: relative;
+}
+
+.gnb > ul > li{
+    text-indent: 53px;
+    line-height: 60px;
+}
+.gnb > ul > li > label{display:block;}
+
+
+
+
+/* 토글 누르면 날아옴 */
+#toggle:checked ~ .gnb{left: 0%;}
+
+/* 서브 누르면 나옴 */
+#sub1:checked + .sub{display: block;}
+#sub2:checked + .sub{display: block;}
+#sub3:checked + .sub{display: block;}
+#sub4:checked + .sub{display: block;}
+
+
+
+/* 내비게이션 하단에 줄 서식 */
+.gnb > ul > li:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #F28241;
+    margin-left: 40px ;
+}
+
+
+
+/* 내비게이션 화살표 */
+.fa-angle-down{
+    float: right; 
+    padding: 20px 10px 0px 0px;
+    color: #F28241;
+}
+
+
+
+
+/* 서브내비게이션 서식*/
+.sub{
+    display: none;
+    background-color: #f5cfb9;
+    margin-left: 40px;
+    border-top: 1px solid #F28241;
+}
+.sub > li > a{
+    display: block;
+    font-size: 1rem;
+}
+
+
+
+/* 닫기버튼 */
+.close_btn{
+    position: absolute;
+    left: 4%; top: 7%;
+}
+
+
+
+/* 유저이미지 서식    :   ul에 position:relative*/
+.user_con{
+    width: 226px;
+    position: absolute;
+    left: 53px; top: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 하단내비 */
+.f_lnb{width: 100%;
+    height: 80px;
+    border-radius: 37px 37px 0px 0px;
+    background: #FFF;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 99;
+}
+
+.f_lnb>ul{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateY(170%);
+}
+
+.f_lnb>ul>li>a{font-size: 18px;
+    padding: 15px 20px;
+    border-radius:50%;
+    color:#8E8E8E;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.18) inset;
+}
+
+/* 기본 하단 내비게이션 */
+.f_lnb>ul>li:first-child>a{
+    background-color:rgb(255, 255, 255);
+    padding: 15px 17px;}
+
+.f_lnb li:nth-child(2)>a{   
+    background-color: #fff;}
+    
+.f_lnb li:last-child>a{
+    background-color: #fff;}
+
+
+/* 메인화면 색상변하기
+.f_lnb>ul>li:first-child>a{
+    background-color:rgb(242, 130, 65);
+    color: #fff;
+    padding: 15px 17px;}
+
+일정화면 색상변하기
+.f_lnb>ul>li:nth-child(2)>a{   
+    background-color:rgb(242, 130, 65);
+    color: #fff;}
+
+북마크화면 색상변하기
+.f_lnb>ul>li:last-child>a{
+    background-color:rgb(242, 130, 65);
+    color: #fff;} */

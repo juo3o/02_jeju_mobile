@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 놀당갑서, 제주 북마크</title>
+    <!-- 초기화 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 공통서식 -->
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <!-- 북마크 레이아웃서식 -->
+    <link href="./css/mkeep.css" rel="stylesheet" type="text/css">
+    <!-- 폰트어썸 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css"/>
+    <!-- 5. 스와이퍼 슬라이드 -->
+    <link href="./css/swiper.css" rel="stylesheet" type="text/css"> 
+    <!-- swiper제이쿼리 스크립트 연결하기 -->
+    <script src="./script/swiper.js"></script>
+
+</head>
+<body>
+    <!-- 상단헤더 -->
+    <header>
+        <h1><a href="mmain.html" title="메인으로 바로가기"><img src="./images/logo.png" alt="메인로고"></a></h1>
+
+        <!-- 검색아이콘, 토글아이콘 -->
+        <a href="./msearch.html" title="검색창" class="icon_wrap i01"><img src="./images/search.png" alt="검색창"></a>
+        <label for="toggle" class="icon_wrap i02"><img src="./images/toggle.png" alt="메뉴"></label><input type="checkbox" id="toggle">
+
+        <!-- 토글 내비게이션 시작 -->
+        <nav class="gnb">
+            <!-- 닫기버튼 -->
+            <label for="toggle" class="close_btn"><img src="./images/close.png" alt="닫기"></label>
+
+            <ul>
+                <li><img class="user_con" src="./images/userimage.png" alt="유저이미지"></li>
+                <li><label for="sub1">마이페이지<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub1">
+                    <!-- 서브내비게이션 시작 -->
+                    <ul class="sub">
+                        <li><a href="info.html" title="개인정보수정">개인정보수정</a></li>
+                        <li><a href="info.html" title="설정">설정</a></li>
+                    </ul>
+                </li>
+                <li><label for="sub2">여행지탐색<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub2">
+                    <ul class="sub">
+                        <li><a href="main_loca.html" title="위치별">위치별</a></li>
+                        <li><a href="main_cos.html" title="코스별">코스별</a></li>
+                        <li><a href="main_shop.html" title="맛집쇼핑">맛집&#47;쇼핑</a></li>
+                        <li><a href="main_conven.html" title="편의시설">편의시설</a></li>
+                    </ul>
+                </li>
+                <li><label for="sub3">숙소예약<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub3">
+                    <ul class="sub">
+                        <li><a href="main_hotel.html" title="호텔예약">호텔예약</a></li>
+                        <li><a href="main_house.html" title="독채예약">독채예약</a></li>
+                        <li><a href="main_camp.html" title="캠핑예약">캠핑예약</a></li>
+                    </ul>
+                </li>
+                <li><label for="sub4">렌트예약<i class="fas fa-angle-down"></i></label><input type="checkbox" id="sub4">
+                    <ul class="sub">
+                        <li><a href="main_cycle.html" title="오토바이예약">오토바이예약</a></li>
+                        <li><a href="main_rentcar.html" title="자동차예약">자동차예약</a></li>
+                    </ul>
+                </li>
+                <li><a href="notice.html" title="공지사항">공지사항</a>
+                </li>
+                <li><a href="event.html" title="이벤트">이벤트</a>
+                </li>
+                <li><a href="tip.html" title="여행꿀팁">여행꿀팁</a>
+                </li>
+                <li><a href="service.html" title="고객센터">고객센터</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- 하단내비 -->
+        <nav class="f_lnb">
+            <ul>
+                <li><a href="./mmain.html" title="메인화면" >
+                    <i class="fas fa-home"></i></a>
+                </li>
+
+                <li><a href="./mschedule.html" title="일정">
+                    <i class="fas fa-clipboard-list"></i></a>
+                </li>
+
+                <li><a href="./mkeep_food.html" title="북마크">
+                    <i class="fas fa-bookmark"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

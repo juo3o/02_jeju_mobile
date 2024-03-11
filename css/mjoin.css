@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+
+/* 상단 */
+
+header .fa{color: #4EB4BF;
+    font-size: 2rem;
+position: absolute;
+right: 10%; top: 50px;}
+
+/* 메인 */
+
+input{cursor: pointer; 
+    margin-bottom: 2%;
+    border-radius: 10px;}
+
+input[type=text]{text-indent: 10px;}
+
+.form>legend{font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 60px;}
+
+
+form{width:100%;}
+
+    .form{
+        width: 90%;
+        margin: 0px 5%;
+    position: relative;}
+    
+        .box{
+        border:1px solid #868686;
+        width:96%;
+        height:50px;}
+    
+
+        .half_box{
+            border:1px solid #868686;
+            width:75%;
+            height:50px;
+            margin-right: 1%;
+        }
+        
+        .check_box{
+            border:none;
+            background: #F28241;
+            color:#fff;
+            width:20%;
+            height:55px
+        }
+
+        .check_box2{
+            border:none;
+            background: #929292;
+            color:#fff;
+            width:20%;
+            height:55px
+        }
+
+    .form input:nth-child(9){margin-top: 2%;}
+    .form input:nth-child(8){margin-top: 2%;}
+
+
+    .tos_box{
+            text-align: center;
+            line-height: 25px;
+            position: absolute;
+            width: 19.5%;height: 25px;
+            border:none;
+            background: #525050;
+            color:#fff;
+            right: 3.2%;}
+        
+
+    .start{display: inline-block;
+                border:none;
+                background: #F28241;
+                color:#fff;
+                width:90%;
+                line-height:50px;
+                margin: 5%;
+                text-align: center;
+                border-radius: 10px;}
+
+    textarea {margin: 1% 0px 2% 0px;}
+            

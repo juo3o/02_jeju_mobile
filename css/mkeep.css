@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* 하단 내비게이션 */
+
+.f_lnb>ul>li:nth-child(3)>a{
+    background-color:rgb(242, 130, 65);
+    color: #fff;}
+
+/* keep에만 존재하는 하단 내비게이션 */
+.k_f_lnb li a{
+    display: inline-block;
+    position: fixed;
+    right: 2vw;
+    width:65px; 
+    height: 65px;
+    color: #fff;
+    background-color: #F28241;
+    text-align: center;
+    box-sizing:border-box;  
+    z-index: 9999;  
+    }
+
+.k_f_lnb li a span{font-size: 0.9rem;}
+
+.k_f_lnb li a i{font-size: 20px;
+display:block;
+}
+
+.k_f_lnb li:first-child>a{
+    bottom: 175px;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    padding: 15px 0px;
+    border-bottom:1px solid #fff;
+}
+.k_f_lnb li:last-child>a{
+    bottom: 110px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    padding: 13.5px 0px;
+}
+
+/* main*/
+main{padding-top: 0px;}
+
+/* main banner */
+.slide{position: relative;
+height: 200px;overflow: hidden;}
+
+.slide img{ transform:translateY(-100px)}
+article>h2{display: none;}
+
+.mySwiper .swiper_wrapper{position: relative;}
+
+.mySwiper .swiper-slide>h2{
+    font-size:1.2rem;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    font-weight:500;
+    text-align:center;
+    padding: 6px 2.3%;
+    line-height:30px;
+    transform: translate(-50%,-50%);
+    z-index:100;
+    border-radius:10px;
+    position: absolute;
+    left: 50%;top: 30%;
+} 
+
+/* 2depth 내비게이션 */
+
+.lnb a{font-size: 1.1rem;
+    display:block;
+    padding: 6%;}
+
+.lnb ul { width: 100vw;
+    white-space: nowrap;
+overflow: hidden;}
+    
+.lnb ul li { 
+    display: inline-block;
+    margin: 6% 0px 8% 0px;
+    padding: 0px 6%;
+    border-right: 1px solid rgb(145, 145, 145);
+}
+
+
+.lnb ul li:last-child{border:none}
+
+/* 필터 */
+.filter{
+    padding:1%;
+    border: 1px solid #888;
+    border-radius: 5px;
+    color: #888;
+    position:relative;
+    left: 74%;
+    margin-bottom:8%;
+}
+
+.fa-filter{color: #F28241;}
+
+input[type=checkbox]{transform: translateX(-1000%);}
+
+/* 목록서식 */
+
+.list{
+    width: 90%;
+    margin: 0px auto 110px auto;}
+
+.list ul li {border-bottom:1px solid rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.list ul li:last-child{
+    border: none;
+}
+
+.list img{width: 25%;
+    height:21vw;
+border-radius: 10px;
+margin: 5% 4% 5% 2%;
+float: left;}
+
+.list dl {
+    margin-top: 5%;
+}
+.list dl dt{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.list dl dd{
+    margin-top: 10px;
+}
+
+.list p {
+font-size: 1.1rem;
+margin: 10% 0px 150px 0px;}
+
+.hashtag{font-size: 0.9rem;
+    display: inline-block;
+margin-top: 20px;}

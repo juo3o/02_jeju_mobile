@@ -1,0 +1,195 @@
+@charset "uft-8";
+
+
+/* 메인화면 색상변하기 */
+.f_lnb>ul>li:first-child>a{
+    background-color:rgb(242, 130, 65);
+    color: #fff;
+    padding: 15px 17px;}
+
+/* 메인서식 */
+/* main{padding-top:100px; }
+
+
+body{overflow-x: hidden;}
+
+
+/* 메인배너 서식 */
+main{position: relative; margin-top: -40px; margin-bottom:100px; overflow-x: hidden;}
+/* main div > a { display: inline-block;} */
+
+.swiper{overflow: hidden;}
+.m_banner{
+    margin: 0px auto;
+    position: relative;
+}
+.m_banner img{width: 100%;     border-radius: 0px 0px 30px 30px;
+}
+.swiper-pagination{position: absolute;}
+
+
+
+
+/* 날씨위젯 서식 */
+.wea_wrap{
+    position: absolute;
+    top: 80px;
+    z-index: 99;
+
+    display: flex;
+    width: 100%;
+    margin: 15px auto;
+    color: #fff;
+    height: 74.5px;
+    border-top: 1px solid #fff;
+    border-bottom:1px solid#fff;
+}
+.wea_wrap p{
+    position: absolute;
+    right: 10px;
+}
+.p01{margin-right: 110px; margin-top: 20px; font-size: 0.875rem; text-align: right; line-height: 18px;}
+.p02{font-size: 2.5rem; margin-right: 15px; margin-top: 17px; letter-spacing:-2px; }
+
+
+
+
+/* 위치별여행지 */
+main  article  h2{ margin: 60px 0px 40px 0px  ; text-indent: 5%;}
+
+.map_title{position: relative;}
+.map_title::after{   
+    content:"";
+    display: block;
+    background-color:#b6b6b6;
+    width: 60%; height: 1px;
+    position: absolute;
+    top: 0px; right: 6%;
+    transform: translateY(700%);
+}
+.map_wrap{
+    text-align: center;
+    margin: 50px auto;
+}
+.map_wrap img{
+    width: 100%;
+    box-sizing:border-box;
+    padding:0px 2%;
+}
+
+
+
+
+/* 전체보기 버튼 */
+.a_wrap{
+    position: relative;
+}
+.p_btn{
+    background: #4EB4BF;
+    padding: 8px 12px;
+    border-radius: 15px;
+    color: #fff;
+    position: absolute;
+    top: -7px; right: 5%;
+}
+
+
+/* 렌트숙소 */
+.rent {
+    width: 100%; 
+    box-sizing:border-box;
+    padding:0px 2%;
+}
+.rent img{
+    width: 100%; 
+    border-radius: 20px;
+}
+.rent_0{
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    margin-top: 2%;
+}
+.r02 img{position: relative; right: 0px;}
+
+
+/* 렌트숙소 배너이미지 */
+.rent  a{
+    position: relative;
+    overflow: hidden;
+}
+.rent  p{
+    position: absolute;
+    width: 100%; 
+    bottom:3px;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    font-size: 1rem; font-weight: 600;
+    padding: 30px 0px;
+    text-indent: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+
+
+
+
+
+
+/* 실시간제주 */
+.sns{
+    display: flex;
+    width: 100%; 
+    padding: 0px 2%;
+    overflow: auto;
+    white-space: nowrap;
+    /* overflow-x: hidden; */
+}
+/* 가로스크롤(f12로 봐야함 */
+.sns::-webkit-scrollbar{
+    display: none; 
+}
+
+
+.sns > li {
+    margin-right: 20px;
+}
+.sns img{
+    height: 70vw;
+    border-radius: 10px;
+}
+
+.p_wrap{
+    line-height: 20px;
+}
+.p_wrap > h3{padding: 8px 0px; }
+.p_wrap > p{padding-bottom: 8px;}
+.p_wrap > a{
+    font-size: 0.9rem;
+    color: #4EB4BF;
+}
+
+/* 좋아요버튼 */
+.p_wrap a{pointer-events : none;}
+.fa-heart{
+    color: #929191;
+    float: right;
+}
+.fa-heart:active{
+    color: #F28241;
+}
+
+
+
+/* 여행꿀팁 */
+.tip_wrap{
+    overflow-x: hidden;    
+    box-sizing:border-box;
+    padding:0px 2%;
+}
+.tip_wrap img{
+    width: 100%;
+    border-radius: 15px;
+
+}
